@@ -2,14 +2,13 @@ package Recursion;
 
 public class SumOfN {
     public static int Sum(int n){
-        if(n==0){
-            return 0;
+        if (n==0){
+            return 0 ;
         }
-        return n+Sum(n-1);
+        int sum=n+Sum(n-1);
+        return sum;
     }
     public static void main(String[] args) {
-        int TotalSum=Sum(8);
-        System.out.println(TotalSum);
+        System.out.println(Sum(10));
     }
 }
-
